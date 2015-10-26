@@ -53,7 +53,7 @@ void MainWindow::on_actionOpen_triggered()
     output_filename += "webm";
 
     if (ui->spinBox_5->value() > 64) {
-        QMessageBox::information(this,tr("Error"), "Value should not be greater than 6");
+        QMessageBox::information(this,tr("Error"), "Value should not be greater than 64");
     } else {
         _wbm_converter->set_crf(ui->spinBox_5->value());
     }
